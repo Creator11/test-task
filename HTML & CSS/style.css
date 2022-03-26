@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.sticker {
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  max-height: 430px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.sticker::after {
+  content: " ";
+  width: 30px;
+  height: 33px;
+  position: absolute;
+  background: url(./img/s-icon.png) 175px 0;
+  top: 178px;
+  right: 0px;
+  cursor: pointer;
+}
+/* /////// */
+.sticker__title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a5ab61;
+  align-items: center;
+  color: #fff;
+}
+.sticker__title-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 20px;
+}
+.sticker__title-icon {
+  width: 40px;
+  height: 35px;
+  background: url(./img/s-icon.png) -58px 0;
+  background-color: #8e994d;
+}
+/* /////// */
+.sticker__body {
+  display: flex;
+  margin: 20px 20px;
+  flex-direction: column;
+}
+.body-content__title {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.sticker__body-content {
+  max-width: 240px;
+  cursor: pointer;
+}
+
+.sticker__body-info {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.body-info__item {
+  display: flex;
+  min-width: fit-content;
+  align-items: center;
+  width: 115px;
+  margin-left: 25px;
+  padding: 5px 0px;
+  position: relative;
+  font-size: 14px;
+}
+/* /////// */
+
+.item-year::before {
+  content: " ";
+  width: 19px;
+  position: absolute;
+  height: 24px;
+  background: url(./img/s-icon.png) 1px 0;
+  left: -25px;
+  top: -3px;
+}
+.item-name::before {
+  content: " ";
+  width: 27px;
+  position: absolute;
+  height: 27px;
+  background: url(./img/s-icon.png) 58px 0;
+  left: -30px;
+  top: -7px;
+}
+
+.item-percent::before {
+  content: " ";
+  width: 21px;
+  position: absolute;
+  height: 21px;
+  background: url(./img/s-icon.png) -18px 0;
+  left: -25px;
+  top: -2px;
+}
+
+.item-team::before {
+  content: " ";
+  width: 21px;
+  position: absolute;
+  height: 25px;
+  background: url(./img/s-icon.png) 104px 0;
+  left: -25px;
+  top: -11px;
+}
+
+/* ////// */
